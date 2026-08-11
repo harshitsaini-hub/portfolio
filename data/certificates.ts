@@ -1,8 +1,8 @@
 export interface Certificate {
   slug: string;
   title: string;
-  issuer: 'Anthropic' | 'Google' | 'EF SET' | 'DeepLearning.AI' | 'Coursera' | 'Other';
-  category: 'Model Context Protocol' | 'AI Agents' | 'Generative AI' | 'Solution Challenge' | 'Linguistics';
+  issuer: 'Oracle' | 'Anthropic' | 'Google' | 'EF SET' | 'DeepLearning.AI' | 'Coursera' | 'Other';
+  category: 'AI Agents' | 'Model Context Protocol' | 'Generative AI' | 'Solution Challenge' | 'Linguistics';
   issueDate: string;
   credentialId?: string;
   verifyUrl?: string;
@@ -14,6 +14,24 @@ export interface Certificate {
 }
 
 export const certificatesData: Certificate[] = [
+  {
+    slug: "oracle-agentic-ai-foundations-associate",
+    title: "Oracle Certified Foundations Associate: Agentic AI",
+    issuer: "Oracle",
+    category: "AI Agents",
+    issueDate: "August 10, 2026",
+    credentialId: "330481237AAI26OFA",
+    imageUrl: "/certificates/oracle-agentic-ai-foundations-associate.png",
+    skillsLearned: ["Agentic AI Architecture", "Oracle Autonomous AI Systems", "Multi-Agent Workflows", "LLM Tool Integration", "Enterprise AI Safety"],
+    description: "Official Oracle University certification recognizing expertise as an Oracle Certified Foundations Associate in Agentic AI systems, autonomous agent workflows, and enterprise AI integration.",
+    courseOutline: [
+      "Foundations of Agentic AI Systems & Architecture",
+      "Building & Deploying Agents on Oracle Infrastructure",
+      "Tool Calling, Planning, and Context Management",
+      "Enterprise AI Security & Governance Standards",
+    ],
+    featured: true,
+  },
   {
     slug: "anthropic-model-context-protocol-advanced-topics",
     title: "Model Context Protocol: Advanced Topics",
@@ -46,7 +64,7 @@ export const certificatesData: Certificate[] = [
       "Defining Tools, Prompts, and Resources",
       "Connecting Claude Desktop & Local Clients to MCP",
     ],
-    featured: true,
+    featured: false,
   },
   {
     slug: "anthropic-introduction-to-agent-skills",

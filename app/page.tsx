@@ -65,7 +65,7 @@ export default function Home() {
         <div className="grid lg:grid-cols-12 gap-12 items-center w-full relative">
           
           {/* Oversized Background Outline Watermark Text */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl md:text-9xl font-black text-stroke-light uppercase tracking-tighter whitespace-nowrap pointer-events-none select-none z-0 opacity-40 font-heading">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl sm:text-6xl md:text-9xl font-black text-stroke-light uppercase tracking-tighter whitespace-nowrap pointer-events-none select-none z-0 opacity-40 font-heading">
             APPLIED AI ENGINEER ✦
           </div>
 
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
 
             {/* Name */}
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-4 leading-[0.9] text-slate-900 font-heading">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter mb-4 leading-[0.9] text-slate-900 font-heading">
               {profileData.name.toUpperCase()} <span className="text-slate-400">{profileData.lastName.toUpperCase()}</span> ✦
             </h1>
 
